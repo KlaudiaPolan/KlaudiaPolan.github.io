@@ -1,0 +1,374 @@
+body{
+  font-family: 'Archivo Narrow', sans-serif;
+}
+#menu{
+	background-color: white;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.navbar{
+	background-color: white;
+	font-size: 1.7rem;
+	color: #ffffff;
+	padding-top: 2rem;
+	border-color: white;
+}
+
+.navbar-outer{
+	width: 1200px;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: black;
+  border: 1px solid white;
+	margin-left: 5px;
+	line-height: 1rem;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+	display: block;
+	color: black;
+	border: 1px solid #c19b76;
+	line-height: 1rem;
+	border-radius: 4px;
+	transition: all 0.7s ease;
+}
+
+.navbar-default .navbar-nav > .active > a{
+	display: block;
+	border-color: #c19b76;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.navbar-default .navbar-nav > .active > a:hover{
+	color: black;
+	background-color: white;
+}
+
+.navbar-default .navbar-nav > .active > a:focus{
+	background-color: white;
+}
+
+
+#logo img{
+	display: block;
+	float:  none;
+	margin-top: -2rem;
+  width: 40%;
+}
+/* FONTS*/
+
+h1,h2,h3,h4,h5,h6{
+	color: #5c6166;
+	font-weight: 300;
+}
+
+h1{
+	font-size:  6rem;
+}
+
+h2{
+	font-size:  4rem;
+	line-height: 6rem;
+}
+
+h3{
+	font-size:  2.5rem;
+	line-height: 3rem;
+}
+
+h4{
+	font-size:  2rem;
+	line-height: 3rem;
+  color:#a4abb3;
+}
+
+/*Carousel*/
+#slider{
+	padding-top: 9rem;
+}
+
+.carousel .item {
+	width: 100%;
+	max-height: 700px;
+}
+
+.carousel .item img {
+	width: 100%;
+  filter: brightness(50%);
+}
+
+.carousel .carousel-control{
+	background: none;
+	border: none;
+	top: 50%;
+}
+
+.carousel-caption{
+	top: 100px;
+	bottom: auto;
+}
+
+
+.carousel-caption h1{
+  font-weight: 600;
+  font-size: 7rem;
+  line-height: 8rem;
+  color: #ffffff;
+  /*text-shadow: 0 0 6px grey;*/
+}
+
+.carousel-caption p{
+	font-size: 4rem;
+	font-weight: 300;
+	color: #ffffff;
+  text-shadow: 0 2px 5px grey;
+}
+.new-font{
+  font-family: 'Lobster', cursive;
+}
+/*about hotel*/
+#about{
+  font-family: 'Archivo Narrow', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+
+}
+.advantages{
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #c19b76;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	text-align: center;
+  color: white;
+}
+.advantages .new-font,
+.advantages h4,
+.advantages h3{
+  color: white;
+}
+.advantages_title{
+	margin-bottom: 5rem;
+}
+.advantages img{
+  width: 20%;
+  margin: 0 auto;
+}
+/*the best hotel in Athens - section with numbers*/
+
+#numbers{
+	padding-top: 6rem;
+  color: 	grey;
+}
+
+.square{
+	border: 1px solid #c19b76;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	border-radius: 0.4rem;
+}
+
+.square h1{
+	font-weight: 500;
+}
+
+.square h5{
+	font-size: 2rem;
+}
+/*restaurant*/
+#restaurant{
+  font-family: 'Archivo Narrow', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  background-color: #c19b76;
+  color: white;
+}
+#restaurant .new-font{
+  color: white;
+}
+
+
+
+/*rooms and suites*/
+#rooms{
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+#rooms p{
+  font-size: 17px;
+}
+.rooms_caption{
+	padding-bottom: 1rem;
+}
+
+.nav-pills > li {
+	float: none;
+	padding-left: 1rem;
+	display: inline-block;
+}
+
+
+.nav-pills > li > a{
+  border: 1px solid #c19b76;
+  background-color: white;
+  color: grey;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 2rem;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a:hover{
+	color: black;
+  background-color: white;
+}
+
+.nav-pills {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.rooms_btn a:hover {
+	-webkit-animation: rotateOut .2s;
+	animation: rotateOut .5s;
+}
+
+#rooms .btn-success{
+  background-color: #c19b76;
+  color: white;
+}
+#rooms .new-font{
+  font-size: 5rem;
+}
+
+
+/*gallery*/
+#gallery{
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.gallery_caption{
+	padding-bottom: 5rem;
+}
+
+.gallery_img{
+	margin-bottom: 1.5rem;
+}
+
+.gallery_img a:hover img{
+	-webkit-animation: pulse .9s;
+	animation: pulse .9s;
+	opacity: 0.8;
+}
+.modal-header{
+  height: 5rem;
+}
+.btn-success{
+  border: 1px solid #c19b76;
+  background-color: white;
+  color: grey;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 2rem;
+}
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover{
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+}
+.close{
+  font-size: 30px;
+}
+
+/*our guests*/
+#guests{
+
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+#guests p{
+  font-size: 1.6rem;
+
+}
+
+.guests_caption{
+	padding-bottom: 5rem;
+}
+#guests h4{
+  line-height: 0;
+}
+.guests_photo{
+	padding: 0.4rem;
+	margin: 0 auto;
+	width: 26rem;
+}
+/* our partners*/
+
+#partners{
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	height: 40rem;
+	background-color: #000000;
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	background: url('../images/agencies_bg.jpg') repeat 0 1500px fixed ;
+
+}
+
+#partners h2{
+	color: #ffffff;
+	margin-bottom: 3rem;
+}
+
+/*Contact*/
+#contact{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	text-align: left;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 2rem;
+}
+#contact .glyphicon{
+  color: #c19b76;
+}
+#contact button:hover {
+	-webkit-animation: wobble .9s;
+	animation: wobble .9s;
+}
+
+
+/* Footer */
+#footer{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: left;
+	background-color: #c19b76;
+	color: white;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+#footer h4{
+	color: white;
+}
+
+#footer img{
+	float: right;
+	margin-right: 2rem;
+	width: 4rem;
+}
+footer img:hover{
+  opacity: 0.9;
+}
