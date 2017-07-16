@@ -89,29 +89,29 @@ h4{
 	padding-top: 9rem;
 }
 
-.carousel .item {
+#slider .carousel .item {
 	width: 100%;
 	max-height: 700px;
 }
 
-.carousel .item img {
+#slider .carousel .item img {
 	width: 100%;
   filter: brightness(50%);
 }
 
-.carousel .carousel-control{
+#slider .carousel .carousel-control{
 	background: none;
 	border: none;
 	top: 50%;
 }
 
-.carousel-caption{
+#slider .carousel-caption{
 	top: 100px;
 	bottom: auto;
 }
 
 
-.carousel-caption h1{
+#slider .carousel-caption h1{
   font-weight: 600;
   font-size: 7rem;
   line-height: 8rem;
@@ -119,7 +119,7 @@ h4{
   /*text-shadow: 0 0 6px grey;*/
 }
 
-.carousel-caption p{
+#slider .carousel-caption p{
 	font-size: 4rem;
 	font-weight: 300;
 	color: #ffffff;
@@ -192,8 +192,9 @@ h4{
 #restaurant .new-font{
   color: white;
 }
-
-
+#restaurant .carousel-control{
+  bottom: 20px;
+}
 
 /*rooms and suites*/
 #rooms{
