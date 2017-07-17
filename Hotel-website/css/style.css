@@ -201,7 +201,9 @@ h4{
 #restaurant .carousel-control{
   bottom: 20px;
 }
-
+#restaurant .img-responsive{
+  width: 100%;
+}
 /*rooms and suites*/
 #rooms{
 	padding-top: 1rem;
