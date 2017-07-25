@@ -60,8 +60,11 @@ body{
 	display: block;
 	float:  none;
 	margin-top: -2rem;
-  width: 40%;
+  width: 100%;
 
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+	width: 200px;
 }
 /* FONTS*/
 
