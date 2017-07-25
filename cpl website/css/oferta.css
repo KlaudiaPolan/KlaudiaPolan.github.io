@@ -1,0 +1,264 @@
+/* MENU */
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+.menu-collapsed {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.b-a,
+.bar,
+.bar:before,
+.bar:after {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 6px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.menu-collapsed {
+    transition: all .25s;
+    position: fixed;
+    top: 10px;
+    left: 9px;
+    height: 36px;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
+    z-index: 99;
+}
+.menu-collapsed ul {
+    transition: all 0s;
+    position: fixed;
+    left: -9000px;
+}
+.bar {
+    position: fixed;
+    left: 15px;
+    top: 30px;
+    box-shadow: 0 0 20px grey;
+}
+.bar:before {
+    top: -12px;
+    box-shadow: 0 0 20px grey;
+}
+.bar:after {
+    top: 12px;
+    box-shadow: 0 0 20px grey;
+}
+.b-a-expanded,
+.menu-expanded .bar:before,
+.menu-expanded .bar:after {
+    transition: all .25s;
+    top: -0px;
+}
+.menu-expanded {
+    transition: all .25s;
+    text-align: center;
+    line-height: 200px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.menu-expanded ul {
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+}
+.menu-expanded a {
+    transition: all .15s;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px;
+    color: #fff;
+    display: block;
+}
+.menu-expanded a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all .15s;
+    letter-spacing: 2px;
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.menu-expanded .bar {
+    background-color: transparent;
+    transition: all .25s;
+    box-shadow: none;
+}
+.menu-expanded .bar:before {
+    transform: rotate(45deg);
+}
+.menu-expanded .bar:after {
+    transform: rotate(-45deg);
+}
+.menu-collapsed li {
+    list-style: none;
+}
+.menu-collapsed ul {
+    padding: 0;
+}
+/* TOP */
+.top {
+    width: 100%;
+    position: relative;
+}
+/* TOP - IMAGE */
+.top-img {
+    width: 100%;
+}
+/* TOP - LOGO */
+.logo {
+    position: absolute;
+    right: 30px;
+    width: 13%;
+    top: 20px;
+}
+/* TOP - CAPTION */
+header h1 {
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 7vw;
+    right: 5rem;
+    top: 40%;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 28px black;
+}
+/* CONTACT SECTION*/
+.contact-sec .row {
+    padding-top: 0;
+    margin-top: -18%;
+}
+.contact-row {
+    display: flex;
+}
+.contact-sec .contact {
+    width: 100%;
+    margin-right: 8px;
+    min-height: 350px;
+    z-index: 1;
+    background-color: #f4f3f3;
+    padding: 20px 20px;
+}
+/* CONTACT - TITLE*/
+.title-style {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    color: #f5ac1e;
+    margin-top: 10px;
+}
+/* CONTACT - TEXT */
+.contact .glyphicon {
+    color: #333;
+}
+
+/* FOOTER*/
+#footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    background-color: #212121;
+}
+#footer h5 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+#footer .row {
+    padding-top: 0;
+}
+/*rooms and suites*/
+#rooms{
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+#prostowanie-felg table{
+  margin: 0 auto;
+}
+#prostowanie-felg p{
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+
+}
+#renowacja-felg p{
+  line-height: 35px;
+}
+#ramy-rowerowe p,
+#ramy-motocyklowe p{
+    font-size: 22px;
+}
+#ramy-rowerowe table,
+#ramy-motocyklowe table{
+  margin-bottom: 20px;
+}
+
+#rooms p{
+  font-size: 22px;
+}
+.rooms_caption{
+	padding-bottom: 1rem;
+}
+
+.nav-pills > li {
+	float: none;
+	padding-left: 1rem;
+	display: inline-block;
+
+}
+.table-responsive,
+#renowacja-felg,
+#ramy-rowerowe,
+#ramy-motocyklowe{
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+
+.nav-pills > li > a{
+  border: 1px solid black;
+  color: grey;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size:2.5rem;
+
+  float: left;
+}
+.oferta-title{
+  margin-bottom: 40px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a:hover{
+	color: white;
+  background-color: #212121;
+  border: 1px solid black;
+}
+
+.nav-pills {
+	text-align: center;
+	padding-bottom: 3rem;
+
+}
+
+.rooms_btn a:hover {
+	-webkit-animation: rotateOut .2s;
+	animation: rotateOut .5s;
+}
+
+#rooms .btn-success{
+  background-color: #c19b76;
+  color: white;
+}
+#rooms .new-font{
+  font-size: 22px;
+}

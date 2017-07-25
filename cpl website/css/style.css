@@ -1,0 +1,464 @@
+/* MENU */
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+.menu-collapsed {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+.b-a,
+.bar,
+.bar:before,
+.bar:after {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 6px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.menu-collapsed {
+    transition: all .25s;
+    position: fixed;
+    top: 10px;
+    left: 9px;
+    height: 36px;
+    width: 36px;
+    z-index: 1;
+    cursor: pointer;
+    z-index: 99;
+}
+.menu-collapsed ul {
+    transition: all 0s;
+    position: fixed;
+    left: -9000px;
+}
+.bar {
+    position: fixed;
+    left: 15px;
+    top: 30px;
+    box-shadow: 0 0 20px grey;
+}
+.bar:before {
+    top: -12px;
+    box-shadow: 0 0 20px grey;
+}
+.bar:after {
+    top: 12px;
+    box-shadow: 0 0 20px grey;
+}
+.b-a-expanded,
+.menu-expanded .bar:before,
+.menu-expanded .bar:after {
+    transition: all .25s;
+    top: -0px;
+}
+.menu-expanded {
+    transition: all .25s;
+    text-align: center;
+    line-height: 200px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.menu-expanded ul {
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+}
+.menu-expanded a {
+    transition: all .15s;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px;
+    color: #fff;
+    display: block;
+}
+.menu-expanded a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all .15s;
+    letter-spacing: 2px;
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.menu-expanded .bar {
+    background-color: transparent;
+    transition: all .25s;
+    box-shadow: none;
+}
+.menu-expanded .bar:before {
+    transform: rotate(45deg);
+}
+.menu-expanded .bar:after {
+    transform: rotate(-45deg);
+}
+.menu-collapsed li {
+    list-style: none;
+}
+.menu-collapsed ul {
+    padding: 0;
+}
+/* TOP */
+.top {
+    width: 100%;
+    position: relative;
+}
+/* TOP - IMAGE */
+.top-img {
+    width: 100%;
+}
+/* TOP - LOGO */
+.logo {
+    position: absolute;
+    right: 30px;
+    width: 13%;
+    top: 20px;
+}
+/* TOP - CAPTION */
+header h1 {
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 7vw;
+    right: 5rem;
+    top: 40%;
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 28px black;
+}
+/* DESCRIPTIONS */
+.descriptions .row {
+    padding-top: 0;
+    margin-top: -18%;
+}
+.desc {
+    display: flex;
+}
+.title-style {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    color: #f5ac1e;
+    margin-top: 10px;
+}
+
+/* FIRST DESCRIPTION - 'MALOWANIE' */
+.descriptions .malowanie {
+    width: 100%;
+    margin-right: 8px;
+    height: 350px;
+    z-index: 1;
+    background-image: url("../images/malowanie.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f4f3f3;
+}
+.malowanie-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+/* SECOND DESCRIPTION - 'PIASKOWANIE' */
+.descriptions .piaskowanie {
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    margin-left: 8px;
+    background-image: url("../images/piaskowanie.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f4f3f3;
+}
+.piaskowanie-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+/* THIRD DESCRIPTION - 'SZKIEŁKOWANIE' */
+.descriptions .szkielkowanie {
+    width: 100%;
+    height: 350px;
+    margin-top: 225px;
+    z-index: 1;
+
+    margin-bottom: 20px;
+
+    background-image: url("../images/szkielkowanie.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f4f3f3;
+}
+.szkielkowanie-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+}
+/* BUTTON */
+[data-wipe] {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #445561;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Oswald",sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #445561;
+    overflow: hidden;
+}
+[data-wipe]:before,
+[data-wipe]:after {
+    content: attr(data-wipe);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: #F1F1F2;
+    background: #f5ac1e;
+}
+[data-wipe]:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+}
+[data-wipe]:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: 0.2s ease-in-out;
+}
+[data-wipe]:hover:before {
+    width: 100%;
+    transition: width 0.2s ease-in-out;
+}
+[data-wipe]:hover:after {
+    left: 0;
+    text-indent: 0;
+    transition: 0s 0.2s ease-in-out;
+}
+/* SECTION ABOUT COMPANY */
+#about {
+    font-size: 20px;
+    background: url('../images/bg.jpg') repeat 0 1000px fixed;
+    color: white;
+}
+#about h1 {
+    margin-top: 35px;
+    margin-bottom: 36px;
+}
+#about p {
+    text-shadow: 0 0 28px black;
+    margin-bottom: 56px;
+    font-family: 'Roboto', sans-serif;
+}
+/* SECTION ABOUT OURS ADVANTAGES */
+.advantages {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #212121;
+    padding-bottom: 2.4rem;
+    color: white;
+}
+.advantages .row {
+    padding-top: 10px;
+}
+.advantages .row:first-child{
+  margin-bottom: 2.4rem;
+}
+.advantages p{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.advantages_title {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.advantages img {
+    width: 20%;
+    margin: 0 auto;
+}
+.advantages p {
+    text-align: center;
+}
+
+/* SECTION WITH GALLERY */
+
+#gallery {
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.gallery_img {
+    margin-bottom: 1.5rem;
+}
+.gallery_img a:hover img {
+    -webkit-animation: pulse .9s;
+    animation: pulse .9s;
+    opacity: 0.8;
+}
+.modal-header {
+    height: 5rem;
+}
+
+.button-two {
+  background-color: lightgrey;
+  color: black;
+  border: none;
+  font-size: 2.4rem;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.close {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#gallery .row {
+    padding-top: 10px;
+}
+.img-rounded {
+    border-radius: 0;
+}
+
+/* SECTION WITH BEFORE & AFTER EFFECT */
+
+#beforeAfter {
+    background-color: #212121;
+}
+#beforeAfter .row {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+#beforeAfter h1 {
+    margin-top: 23px;
+}
+.image-reveal {
+    position: relative;
+}
+.under-slide {
+    position: relative;
+    overflow: hidden;
+    padding-top: 41%;
+    top: 0;
+    left: 0;
+    background: url("../images/01019184322-new.jpg") no-repeat;
+    background-size: cover;
+}
+.over-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translateX(0px);
+    overflow: hidden;
+}
+.over-image {
+    height: 100%;
+    width: 100%;
+    background: url("../images/01019184322.jpg") no-repeat;
+    background-size: cover;
+    -webkit-transform: translateX(0px);
+}
+.divider {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    margin-left: -2px;
+    background-color: #f5ac1e;
+}
+
+/* CONTACT */
+#contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+#contact h1 {
+    margin-bottom: 20px;
+}
+#contact .glyphicon {
+    color: #333;
+}
+#contact p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/* FOOTER */
+#footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    background-color: #212121;
+}
+#footer h5 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+#footer .row {
+    padding-top: 0;
+}

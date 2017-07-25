@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CPL website</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/animate.css" rel="stylesheet" media="screen">
+  <link href="css/kontakt.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header class="top">
+    <div class="menu-collapsed">
+      <div class="bar"></div>
+      <nav>
+        <ul>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="oferta.html"><li>OFERTA</li></a>
+          <a href="kontakt.html"><li>KONTAKT</li></a>
+        </ul>
+      </nav>
+    </div>
+    <img src="images/logo.png" class="logo img-responisive">
+    <h1>Zaufaj najlepszym<br>w branży</h1>
+    <img src="images/top.png" class="top-img img-responisive">
+  </header>
+
+  <!-- SECTION WITH DESCRIPTIONS -->
+    <section class="contact-sec">
+      <div class="container">
+        <div class="row contact-row">
+          <div class="contact">
+            <div class="contact-text col-xs-12 col-sm-12 col-md-5 col-lg-5">
+              <h1 span class="title-style">Kontakt</h1>
+              <p class="contact-p"><span class="glyphicon glyphicon-home"></span> ul.Dąbrowskiego 30/5 <br> Dąbrowa Górnicza 41-300 <br>
+                      <span class="glyphicon glyphicon-envelope"></span> piaskowaniekabinowe@gmail.com <br>
+                      <span class="glyphicon glyphicon-phone"></span>791-045-292
+              </p>
+              <div id="map"></div>
+            </div>
+            <div class="contact-text col-xs-12 col-sm-12 col-md-5 col-lg-4 col-lg-offset-1">
+              <p class="contact-p title-contact">Jesteś zainteresowany naszą ofertą, chciałbyś nawiązać współpracę? Zapraszamy do kontaktu. </p>
+              <form action="#" method="post">
+                  <div class="form-group">
+                      <label for="email" class="control-label">Ades e-mail:</label>
+                      <input type="text" class="form-control" name="email" placeholder="Adres Twojego e-maila">
+                      <label for="temat" class="control-label">Temat:</label>
+                      <input type="text" class="form-control" name="email" placeholder="Temat">
+                  </div>
+                  <div class="form-group">
+                      <label for="uwagi" class="control-label">Wiadomość:</label>
+                      <textarea class="form-control" name="message" rows="8" title="Message" data-toggle="tooltip" data-placement="top" placeholder="Treść wiadomości"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="sub-main">
+                      <button class="button-two" type="submit"><span>Wyślij</span></button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+  <!-- SECTION WITH FOOTER -->
+   <section id="footer">
+     <div class="container">
+       <footer class="row">
+         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9">
+           <h5>Copyright 2017 &copy; CPL Centrum Powłok Lakierniczych</h5>
+         </div>
+         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+           <h5>Projekt i wykonanie AddDesign</h5>
+         </div>
+       </footer>
+     </div>
+   </section>
+
+
+
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2PwMPe-_r52nEevtQSEVLSgqOHsQJU_o&callback=initMap" async defer></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

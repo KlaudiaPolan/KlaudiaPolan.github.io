@@ -1,0 +1,59 @@
+@media(max-width: 800px){
+  .desc{
+    flex-wrap: wrap;
+    margin-top: 0;
+
+  }
+  .descriptions .piaskowanie{
+    width: 100%;
+    margin-left: 0;
+
+  }
+  .descriptions .malowanie{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .descriptions .szkielkowanie{
+    width: 100%;
+    margin-top: 21%;
+  }
+}
+@media(max-width: 1200px){
+  .descriptions .malowanie {
+      background-image: url("../images/malowanie-min.png");
+  }
+  .malowanie-p{
+      margin-bottom: 17px;
+  }
+  .descriptions .piaskowanie{
+    background-image: url("../images/piaskowanie-min.png");
+
+  }
+  .piaskowanie-p{
+      margin-bottom: 17px;
+  }
+  .descriptions .szkielkowanie{
+    background-image: url("../images/szkielkowanie-min.png");
+  }
+  .szkielkowanie-p{
+      margin-bottom: 17px;
+      font-size: 17px;
+  }
+}
+@media(max-width: 800px){
+  .malowanie-p{
+      margin-bottom: 17px;
+      margin-right: 20%;
+  }
+  .piaskowanie-p{
+      margin-bottom: 17px;
+      margin-right: 18%;
+  }
+  .szkielkowanie-p{
+      margin-bottom: 17px;
+      font-size: 17px;
+      margin-right: 5%;
+  }
+}
