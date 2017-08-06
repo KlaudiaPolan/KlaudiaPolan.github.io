@@ -151,7 +151,7 @@ header h1 {
 .descriptions .malowanie {
     width: 100%;
     margin-right: 8px;
-    height: 350px;
+    min-height: 350px;
     z-index: 1;
     background-image: url("../images/malowanie.png");
     background-position: right;
@@ -168,7 +168,7 @@ header h1 {
 /* SECOND DESCRIPTION - 'PIASKOWANIE' */
 .descriptions .piaskowanie {
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     z-index: 1;
     margin-left: 8px;
     background-image: url("../images/piaskowanie.png");
@@ -186,7 +186,7 @@ header h1 {
 /* THIRD DESCRIPTION - 'SZKIEŁKOWANIE' */
 .descriptions .szkielkowanie {
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     margin-top: 225px;
     z-index: 1;
 

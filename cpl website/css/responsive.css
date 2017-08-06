@@ -20,6 +20,11 @@
     margin-top: 21%;
   }
 }
+@media(max-width: 991px) and (min-width: 801px){
+  .descriptions .szkielkowanie {
+    margin-top: 151px;
+  }
+}
 @media(max-width: 1200px){
   .descriptions .malowanie {
       background-image: url("../images/malowanie-min.png");
