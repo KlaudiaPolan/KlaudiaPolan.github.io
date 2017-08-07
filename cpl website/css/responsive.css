@@ -1,4 +1,81 @@
+
+
+@media(max-width: 1200px){
+  .descriptions .malowanie {
+      background-image: url("../images/malowanie-min.png");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  .malowanie-p{
+      margin-bottom: 17px;
+  }
+  .descriptions .piaskowanie{
+    background-image: url("../images/piaskowanie-min.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
+  .piaskowanie-p{
+      margin-bottom: 17px;
+  }
+  .descriptions .szkielkowanie{
+    background-image: url("../images/szkielkowanie-min.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 184px;
+  }
+  .szkielkowanie-p{
+      margin-bottom: 17px;
+      font-size: 17px;
+  }
+}
+@media(max-width: 1000px){
+  .logo{
+    width: 15%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 940px){
+  .descriptions .container{
+        width: 920px;
+    }
+    .descriptions .szkielkowanie {
+      margin-top: 175px;
+    }
+}
+@media (max-width: 940px) and (min-width: 870px){
+  .descriptions .container{
+        width: 850px;
+    }
+    .descriptions .szkielkowanie {
+      margin-top: 163px;
+    }
+}
+@media (max-width: 870px){
+    .descriptions .szkielkowanie {
+      margin-top: 144px;
+    }
+}
 @media(max-width: 800px){
+  .malowanie-p{
+      margin-bottom: 17px;
+      margin-right: 20%;
+  }
+  .piaskowanie-p{
+      margin-bottom: 17px;
+      margin-right: 18%;
+  }
+  .szkielkowanie-p{
+      margin-bottom: 17px;
+      font-size: 17px;
+      margin-right: 5%;
+  }
+  .logo{
+    width: 17%;
+  }
   .desc{
     flex-wrap: wrap;
     margin-top: 0;
@@ -17,48 +94,69 @@
   }
   .descriptions .szkielkowanie{
     width: 100%;
-    margin-top: 21%;
+    margin-top: 20%;
   }
 }
-@media(max-width: 991px) and (min-width: 801px){
-  .descriptions .szkielkowanie {
-    margin-top: 151px;
+@media(max-width: 525px){
+  .descriptions .szkielkowanie{
+    background-image: none;
+    min-height: 420px;
   }
 }
-@media(max-width: 1200px){
-  .descriptions .malowanie {
-      background-image: url("../images/malowanie-min.png");
+@media(max-width: 386px){
+  p{
+    font-size: 17px;
   }
-  .malowanie-p{
-      margin-bottom: 17px;
+  #contact p {
+    font-size: 17px;
   }
-  .descriptions .piaskowanie{
-    background-image: url("../images/piaskowanie-min.png");
-
+  #contact img {
+    width: 15%;
   }
-  .piaskowanie-p{
-      margin-bottom: 17px;
+  #contact a {
+    font-size: 17px;
+  }
+  #footer h5 {
+    font-size: 13px;
+  }
+  #beforeAfter{
+    display: none;
+  }
+  #contact{
+    padding-top: 0rem;
+  }
+  #gallery {
+    padding-bottom: 1rem;
+  }
+  .title-style{
+    font-size: 40px;
   }
   .descriptions .szkielkowanie{
-    background-image: url("../images/szkielkowanie-min.png");
+    background-image: none;
+    min-height: 353px;
   }
-  .szkielkowanie-p{
-      margin-bottom: 17px;
-      font-size: 17px;
+  .descriptions .piaskowanie{
+    min-height: 288px;
   }
-}
-@media(max-width: 800px){
-  .malowanie-p{
-      margin-bottom: 17px;
-      margin-right: 20%;
+  .descriptions .malowanie{
+    min-height: 237px;
   }
-  .piaskowanie-p{
-      margin-bottom: 17px;
-      margin-right: 18%;
+  .descriptions .piaskowanie p{
+    font-size: 15px;
   }
-  .szkielkowanie-p{
-      margin-bottom: 17px;
-      font-size: 17px;
-      margin-right: 5%;
+  .descriptions .malowanie p{
+      font-size: 15px;
+  }
+  .descriptions .piaskowanie .btn-piaskowanie{
+    font-size: 14px;
+  }
+  .descriptions .malowanie .btn-malowanie{
+      font-size: 14px;
+  }
+  .descriptions .szkielkowanie p{
+      font-size: 15px;
+  }
+  .descriptions .szkielkowanie .btn-malowanie{
+      font-size: 14px;
   }
 }

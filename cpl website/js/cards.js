@@ -1,5 +1,8 @@
 $(document).ready(function(){
   /* MALOWANIE */
+  var mobileViewport = window.matchMedia("screen and (max-width: 386px)");
+
+
   var click1=1;
   $(".btn-malowanie").on('click',function(event) {
     event.preventDefault();
@@ -27,7 +30,11 @@ $(document).ready(function(){
       $(".malowanie-text").removeClass('col-lg-12');
       $(".malowanie-text").addClass('col-lg-7');
       $(".malowanie-text").addClass('malowanie-p');
-      $(".descriptions").find(".malowanie").css("background-image","url('./images/malowanie.png')");
+      if(mobileViewport.matches) {
+          $(".descriptions").find(".malowanie").css("background-image","none");
+      } else {
+          $(".descriptions").find(".malowanie").css("background-image","url('./images/malowanie.png')");
+      }
       $(".malowanie").find('p').hide();
       $(".malowanie").find('.btn').before(newP);
     }
@@ -60,7 +67,12 @@ $(document).ready(function(){
       $(".piaskowanie-text").removeClass('col-lg-12');
       $(".piaskowanie-text").addClass('col-lg-7');
       $(".piaskowanie-text").addClass('piaskowanie-p');
-      $(".descriptions").find(".piaskowanie").css("background-image","url('./images/piaskowanie.png')");
+      if(mobileViewport.matches) {
+          $(".descriptions").find(".piaskowanie").css("background-image","none");
+      } else {
+          $(".descriptions").find(".piaskowanie").css("background-image","url('./images/piaskowanie.png')");
+      }
+
       $(".piaskowanie").find('p').hide();
       $(".piaskowanie").find('.btn').before(newP);
     }
@@ -96,8 +108,12 @@ $(document).ready(function(){
       $(".szkielkowanie-text").removeClass('col-lg-12');
       $(".szkielkowanie-text").addClass('col-lg-7');
       $(".szkielkowanie-text").addClass('szkielkowanie-p');
+      if(mobileViewport.matches) {
+          $(".descriptions").find(".szkielkowanie").css("background-image","none");
+      } else {
+          $(".descriptions").find(".szkielkowanie").css("background-image","url('./images/szkielkowanie.png')");
+      }
 
-      $(".descriptions").find(".szkielkowanie").css("background-image","url('./images/szkielkowanie.png')");
       $(".szkielkowanie").find('p').hide();
       $(".szkielkowanie").find('.btn').before(newP);
 
