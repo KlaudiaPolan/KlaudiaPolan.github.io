@@ -1,0 +1,240 @@
+.cssload-cube {
+	background-color: #057091;
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	margin: auto;
+	animation: cssload-cubemove 4.6s infinite ease-in-out;
+		-o-animation: cssload-cubemove 4.6s infinite ease-in-out;
+		-ms-animation: cssload-cubemove 4.6s infinite ease-in-out;
+		-webkit-animation: cssload-cubemove 4.6s infinite ease-in-out;
+		-moz-animation: cssload-cubemove 4.6s infinite ease-in-out;
+}
+
+.cssload-cube1 {
+	left: 16px;
+	top: 0px;
+	animation-delay: 0.23s;
+		-o-animation-delay: 0.23s;
+		-ms-animation-delay: 0.23s;
+		-webkit-animation-delay: 0.23s;
+		-moz-animation-delay: 0.23s;
+}
+
+.cssload-cube2 {
+	left: 32px;
+	top: 0px;
+	animation-delay: 0.46s;
+		-o-animation-delay: 0.46s;
+		-ms-animation-delay: 0.46s;
+		-webkit-animation-delay: 0.46s;
+		-moz-animation-delay: 0.46s;
+}
+
+.cssload-cube3 {
+	left: 47px;
+	top: 0px;
+	animation-delay: 0.69s;
+		-o-animation-delay: 0.69s;
+		-ms-animation-delay: 0.69s;
+		-webkit-animation-delay: 0.69s;
+		-moz-animation-delay: 0.69s;
+}
+
+.cssload-cube4 {
+	left: 0px;
+	top: 16px;
+	animation-delay: 0.23s;
+		-o-animation-delay: 0.23s;
+		-ms-animation-delay: 0.23s;
+		-webkit-animation-delay: 0.23s;
+		-moz-animation-delay: 0.23s;
+}
+
+.cssload-cube5 {
+	left: 16px;
+	top: 16px;
+	animation-delay: 0.46s;
+		-o-animation-delay: 0.46s;
+		-ms-animation-delay: 0.46s;
+		-webkit-animation-delay: 0.46s;
+		-moz-animation-delay: 0.46s;
+}
+
+.cssload-cube6 {
+	left: 32px;
+	top: 16px;
+	animation-delay: 0.69s;
+		-o-animation-delay: 0.69s;
+		-ms-animation-delay: 0.69s;
+		-webkit-animation-delay: 0.69s;
+		-moz-animation-delay: 0.69s;
+}
+
+.cssload-cube7 {
+	left: 47px;
+	top: 16px;
+	animation-delay: 0.92s;
+		-o-animation-delay: 0.92s;
+		-ms-animation-delay: 0.92s;
+		-webkit-animation-delay: 0.92s;
+		-moz-animation-delay: 0.92s;
+}
+
+.cssload-cube8 {
+	left: 0px;
+	top: 32px;
+	animation-delay: 0.46s;
+		-o-animation-delay: 0.46s;
+		-ms-animation-delay: 0.46s;
+		-webkit-animation-delay: 0.46s;
+		-moz-animation-delay: 0.46s;
+}
+
+.cssload-cube9 {
+	left: 16px;
+	top: 32px;
+	animation-delay: 0.69s;
+		-o-animation-delay: 0.69s;
+		-ms-animation-delay: 0.69s;
+		-webkit-animation-delay: 0.69s;
+		-moz-animation-delay: 0.69s;
+}
+
+.cssload-cube10 {
+	left: 32px;
+	top: 32px;
+	animation-delay: 0.92s;
+		-o-animation-delay: 0.92s;
+		-ms-animation-delay: 0.92s;
+		-webkit-animation-delay: 0.92s;
+		-moz-animation-delay: 0.92s;
+}
+
+.cssload-cube11 {
+	left: 47px;
+	top: 32px;
+	animation-delay: 1.15s;
+		-o-animation-delay: 1.15s;
+		-ms-animation-delay: 1.15s;
+		-webkit-animation-delay: 1.15s;
+		-moz-animation-delay: 1.15s;
+}
+
+.cssload-cube12 {
+	left: 0px;
+	top: 47px;
+	animation-delay: 0.69s;
+		-o-animation-delay: 0.69s;
+		-ms-animation-delay: 0.69s;
+		-webkit-animation-delay: 0.69s;
+		-moz-animation-delay: 0.69s;
+}
+
+.cssload-cube13 {
+	left: 16px;
+	top: 47px;
+	animation-delay: 0.92s;
+		-o-animation-delay: 0.92s;
+		-ms-animation-delay: 0.92s;
+		-webkit-animation-delay: 0.92s;
+		-moz-animation-delay: 0.92s;
+}
+
+.cssload-cube14 {
+	left: 32px;
+	top: 47px;
+	animation-delay: 1.15s;
+		-o-animation-delay: 1.15s;
+		-ms-animation-delay: 1.15s;
+		-webkit-animation-delay: 1.15s;
+		-moz-animation-delay: 1.15s;
+}
+
+.cssload-cube15 {
+	left: 47px;
+	top: 47px;
+	animation-delay: 1.38s;
+		-o-animation-delay: 1.38s;
+		-ms-animation-delay: 1.38s;
+		-webkit-animation-delay: 1.38s;
+		-moz-animation-delay: 1.38s;
+}
+
+.cssload-spinner {
+	margin: auto;
+	width: 62px;
+	height: 62px;
+  top: 40%;
+	position: relative;
+}
+
+
+
+@keyframes cssload-cubemove {
+	35% {
+		transform: scale(0.005);
+	}
+	50% {
+		transform: scale(1.7);
+	}
+	65% {
+		transform: scale(0.005);
+	}
+}
+
+@-o-keyframes cssload-cubemove {
+	35% {
+		-o-transform: scale(0.005);
+	}
+	50% {
+		-o-transform: scale(1.7);
+	}
+	65% {
+		-o-transform: scale(0.005);
+	}
+}
+
+@-ms-keyframes cssload-cubemove {
+	35% {
+		-ms-transform: scale(0.005);
+	}
+	50% {
+		-ms-transform: scale(1.7);
+	}
+	65% {
+		-ms-transform: scale(0.005);
+	}
+}
+
+@-webkit-keyframes cssload-cubemove {
+	35% {
+		-webkit-transform: scale(0.005);
+	}
+	50% {
+		-webkit-transform: scale(1.7);
+	}
+	65% {
+		-webkit-transform: scale(0.005);
+	}
+}
+
+@-moz-keyframes cssload-cubemove {
+	35% {
+		-moz-transform: scale(0.005);
+	}
+	50% {
+		-moz-transform: scale(1.7);
+	}
+	65% {
+		-moz-transform: scale(0.005);
+	}
+}
+
+#preloader{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #dbdbdb;
+}

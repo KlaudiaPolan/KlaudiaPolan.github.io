@@ -1,0 +1,388 @@
+$btn-color: #057091;
+$btn-font-color: #fff;
+$icon-bg-color: #057091;
+$font-stack: "Poppins",sans-serif;
+html {
+    font-size: 20px;
+}
+//fonts
+h1 {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #057091;
+}
+h3 {
+    color: $icon-bg-color;
+    font-family: $font-stack;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+p {
+    font-size: 0.60rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+//style of line before the button
+.button-line{
+  position: absolute;
+  left: -7px;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  border-left: 1px solid $btn-color;
+  border-right: 3px solid $btn-color;
+  border-color: $btn-color;
+}
+
+//menu
+#menu {
+    background-color: white;
+    font-family: $font-stack;
+    font-weight: 600;
+    button{
+      background-color: #f0f0f0;
+      margin-top: 2%;
+    }
+    li:nth-child(6){
+      margin-top: -13px;
+    }
+}
+.navbar {
+    background-color: white;
+    font-size: 0.7rem;
+    color: #ffffff;
+    padding-top: 2rem;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+}
+.navbar-default {
+    background-image: none;
+}
+.navbar-brand {
+    background-color: white;
+    height: 62px;
+    padding: 15px 4px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    margin-left: 0;
+    margin-top: -20px;
+    line-height: 1.2rem;
+    padding-left: 2px;
+    text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    display: block;
+    color: $icon-bg-color;
+    line-height: 1rem;
+    transition: all 0.7s ease;
+}
+.navbar-default .navbar-nav > .active > a {
+    display: block;
+    color: $icon-bg-color;
+    border-color: $icon-bg-color;
+    background-image: none;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+    color: $icon-bg-color;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+}
+#logo img {
+    display: block;
+    float: none;
+    margin-top: -2rem;
+    width: 100%;
+}
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+    width: 200px;
+}
+.active {
+    border-bottom: 1px solid $icon-bg-color;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    background: $icon-bg-color;
+}
+
+//carousel section
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    z-index: 1;
+}
+.carousel-caption,
+.carousel-photo {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    height: 105%;
+    background: url("../images/background-img.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    padding-top: 180px;
+    z-index: 11;
+    transition-duration: 0.4s;
+    img {
+        width: 60%;
+    }
+}
+.arrow-left:hover,
+.arrow-right:hover {
+    opacity: 0.3;
+}
+.arrow-left {
+    left: 0;
+    img {
+        margin-left: 40%;
+    }
+}
+.arrow-right {
+    right: 0;
+}
+.carousel-photo {
+    background: none;
+    img {
+        height: 96%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 0.4s;
+    }
+}
+.carousel-caption {
+    left: 0;
+    text-shadow: none;
+    font-family: $font-stack;
+    font-weight: 400;
+    button{
+      background-color: $icon-bg-color;
+    }
+    .button-line{
+      border-color: $icon-bg-color;
+    }
+
+    item {
+        position: absolute;
+        transition-duration: 0.4s;
+        top: 10%;
+        left: 26%;
+        width: 60%;
+        text-align: left;
+        h1 {
+            color: $btn-color;
+            margin-bottom: -11px;
+            margin-top: 0;
+        }
+        p {
+            color: grey;
+        }
+        h2 {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+//about us section
+.about-us {
+    background-image: url("../images/about-us-photo.jpg");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    font-family: $font-stack;
+    padding-bottom: 40px;
+    transition-duration: 0.4s;
+    h1 {
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
+
+.headline-border {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 7px;
+    width: 55px;
+    border-top: 1px solid $btn-color;
+    border-bottom: 3px solid $btn-color;
+}
+button {
+    background-color: $btn-color;
+    color: $btn-font-color;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.7rem;
+    border: none;
+    transition-duration: 0.4s;
+    position: relative;
+}
+
+
+//segmentation
+.segmentation {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f5f5f5;
+    font-family: $font-stack;
+    transition-duration: 0.4s;
+    p {
+        min-height: 115px;
+    }
+}
+.icon {
+    background: $icon-bg-color;
+    width: 70px;
+    float: left;
+    min-height: 70px;
+    padding-top: 5px;
+    padding-left: 5px;
+    transition-duration: 0.4s;
+}
+.icon img{
+  width: 90%;
+}
+h2 {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+.segmentation .headline-border {
+    border-top: 1px solid #057091;
+    border-bottom: 3px solid #057091;
+}
+.segmentation button {
+    background-color: #057091;
+    .button-line{
+      border-color: #057091;
+    }
+}
+
+//cta
+.cta {
+    background-image: url("../images/Photo.jpg");
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: $font-stack;
+    h1 {
+        position: relative;
+    }
+    p{
+      margin-top: 20px;
+    }
+    .headline-border {
+        border-color: #057091;
+    }
+    button {
+        margin: 0 auto;
+        margin-top: 18%;
+        display: inline-block;
+    }
+}
+.cta .container-fluid:first-child {
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 20px;
+}
+
+//footer
+footer {
+    margin-top: 50px;
+    font-family: $font-stack;
+    h3 {
+        position: relative;
+    }
+    .headline-border {
+        border-color: $icon-bg-color;
+    }
+    p {
+        margin-top: 20px;
+    }
+    img[alt="linkedIn"] {
+        padding-left: 0;
+    }
+    .col-lg-4:nth-child(2) {
+        button {
+            background-color: $icon-bg-color;
+        }
+        .button-line {
+            border-color: $icon-bg-color;
+        }
+    }
+    button {
+        padding: 6px;
+        font-size: 0.6rem;
+    }
+    form {
+        margin-top: 20px;
+        font-size: 0.5rem;
+        input {
+            border: none;
+            border-bottom: 2px solid grey;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        div:nth-child(1) {
+            padding-left: 0;
+        }
+        div:nth-child(2) {
+            padding-left: 10px;
+        }
+        textarea {
+            border: none;
+            border-bottom: 2px solid grey;
+            width: 100%;
+            resize: none;
+            padding: 0;
+            min-height: 100px;
+            margin-bottom: 20px;
+        }
+        *:focus{
+          outline: 2px solid grey;
+        }
+    }
+
+    //copyright
+    .copyright {
+        background-color: #f5f5f5;
+        margin-top: 60px;
+    }
+}
+
+@import "_preloader.scss";
+@import "_responsive.scss";

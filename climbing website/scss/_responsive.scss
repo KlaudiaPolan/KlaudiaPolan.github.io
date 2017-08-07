@@ -1,0 +1,95 @@
+@media(max-width:991px) {
+    .cta button {
+        margin-top: 2%;
+    }
+    footer form input {
+        width: 100%;
+    }
+    .about-us {
+        background-image: none;
+    }
+    .carousel-caption item {
+        left: 17%;
+        width: 66%;
+    }
+}
+@media(max-width:767px) {
+    .active {
+        border: none
+    }
+    .active::before {
+        background: none;
+    }
+    .navbar-default {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar-default .container-fluid:first-child {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-top: -16px;
+        margin-bottom: 23px;
+    }
+    #logo img {
+        margin-top: auto;
+    }
+    #ul_navigation {
+        margin-top: 25px;
+    }
+    .segmentation p {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    .segmentation button {
+        margin-bottom: 20px;
+    }
+    footer form div:nth-child(1) {
+        margin-top: 20px;
+    }
+    footer form div:nth-child(1),
+    footer form div:nth-child(2) {
+        padding-left: 15px;
+    }
+    .carousel-photo {
+        display: none;
+    }
+    .carousel-caption {
+        width: 100%;
+    }
+    #menu {
+        button{
+          margin-left: 45%;
+        }
+    }
+}
+@media(max-width:548px) {
+  .navbar>.container-fluid .navbar-brand {
+      margin-top: -70px;
+  }
+  img[alt="linkedIn"]{
+    width: 35%;
+  }
+  img[alt="Facebook"]{
+    width: 35%;
+  }
+}
+@media(max-width:450px){
+    .carousel{
+        height:500px;
+    }
+}
+@media(max-width:395px) {
+  .carousel-caption item h1 {
+      font-size: 1.4rem;
+  }
+  .carousel-caption item button {
+      font-size: 0.55rem;
+  }
+  .arrow-left img, .arrow-right img {
+    width: 50%;
+  }
+
+}
