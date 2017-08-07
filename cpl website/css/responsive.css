@@ -1,11 +1,13 @@
-
-
 @media(max-width: 1200px){
   .descriptions .malowanie {
-      background-image: url("../images/malowanie-min.png");
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: contain;
+    background-image: url("../images/malowanie-min.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   .malowanie-p{
       margin-bottom: 17px;
@@ -14,8 +16,11 @@
     background-image: url("../images/piaskowanie-min.png");
     background-position: right;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
-
   }
   .piaskowanie-p{
       margin-bottom: 17px;
@@ -24,6 +29,10 @@
     background-image: url("../images/szkielkowanie-min.png");
     background-position: right;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
     background-size: contain;
     margin-top: 184px;
   }
