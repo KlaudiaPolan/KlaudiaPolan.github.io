@@ -1,5 +1,5 @@
 .button__action {
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
   border: none;
   text-transform: uppercase;
   text-align: center;
@@ -166,7 +166,7 @@
   -ms-text-decoration: none;
   -o-text-decoration: none;
   text-decoration: none;
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
   color: black;
   font-size: 13px;
   text-transform: uppercase;
@@ -272,7 +272,7 @@
   font-size: 50px;
   color: #fff;
   text-transform: uppercase;
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
 }
 
 .banner__text {
@@ -318,7 +318,7 @@
 }
 
 .last_watched__text {
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -336,7 +336,7 @@
 .lookbook__navigation__link {
   display: inline-block;
   text-align: center;
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -358,7 +358,7 @@
 }
 
 .lookbook__price {
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
   color: black;
   font-size: 16px;
   text-transform: uppercase;
@@ -387,7 +387,7 @@
 }
 
 .footer__block__title {
-  font-family: "lovelo", sans-serif;
+  font-family: "Francois One", sans-serif;
   font-size: 14px;
   line-height: 60px;
 }
