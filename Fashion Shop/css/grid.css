@@ -1,0 +1,223 @@
+.container,
+.full__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container .row::before,
+.container .row::after,
+.full__container .row::before,
+.full__container .row::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.container .row [class*='col-'],
+.full__container .row [class*='col-'] {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .container .row [class*='col-'],
+  .full__container .row [class*='col-'] {
+    float: left;
+  }
+}
+
+.container .row [class*='col-sm-'],
+.full__container .row [class*='col-sm-'] {
+  float: left;
+  width: 100%;
+}
+
+@media (max-width: 799px) {
+  .container .row [class*='col-sm-'],
+  .full__container .row [class*='col-sm-'] {
+    float: left;
+  }
+}
+
+.container .row [class*='col-xs-'],
+.full__container .row [class*='col-xs-'] {
+  float: left;
+  width: 100%;
+}
+
+@media (max-width: 639px) {
+  .container .row [class*='col-xs-'],
+  .full__container .row [class*='col-xs-'] {
+    float: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .container .row .col-1,
+  .full__container .row .col-1 {
+    width: 8.33333%;
+  }
+  .container .row .col-2,
+  .full__container .row .col-2 {
+    width: 16.66667%;
+  }
+  .container .row .col-3,
+  .full__container .row .col-3 {
+    width: 25%;
+  }
+  .container .row .col-4,
+  .full__container .row .col-4 {
+    width: 33.33333%;
+  }
+  .container .row .col-5,
+  .full__container .row .col-5 {
+    width: 41.66667%;
+  }
+  .container .row .col-6,
+  .full__container .row .col-6 {
+    width: 50%;
+  }
+  .container .row .col-7,
+  .full__container .row .col-7 {
+    width: 58.33333%;
+  }
+  .container .row .col-8,
+  .full__container .row .col-8 {
+    width: 66.66667%;
+  }
+  .container .row .col-9,
+  .full__container .row .col-9 {
+    width: 75%;
+  }
+  .container .row .col-10,
+  .full__container .row .col-10 {
+    width: 83.33333%;
+  }
+  .container .row .col-11,
+  .full__container .row .col-11 {
+    width: 91.66667%;
+  }
+  .container .row .col-12,
+  .full__container .row .col-12 {
+    width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  .container .row .col-sm-1,
+  .full__container .row .col-sm-1 {
+    width: 8.33333%;
+  }
+  .container .row .col-sm-2,
+  .full__container .row .col-sm-2 {
+    width: 16.66667%;
+  }
+  .container .row .col-sm-3,
+  .full__container .row .col-sm-3 {
+    width: 25%;
+  }
+  .container .row .col-sm-4,
+  .full__container .row .col-sm-4 {
+    width: 33.33333%;
+  }
+  .container .row .col-sm-5,
+  .full__container .row .col-sm-5 {
+    width: 41.66667%;
+  }
+  .container .row .col-sm-6,
+  .full__container .row .col-sm-6 {
+    width: 50%;
+  }
+  .container .row .col-sm-7,
+  .full__container .row .col-sm-7 {
+    width: 58.33333%;
+  }
+  .container .row .col-sm-8,
+  .full__container .row .col-sm-8 {
+    width: 66.66667%;
+  }
+  .container .row .col-sm-9,
+  .full__container .row .col-sm-9 {
+    width: 75%;
+  }
+  .container .row .col-sm-10,
+  .full__container .row .col-sm-10 {
+    width: 83.33333%;
+  }
+  .container .row .col-sm-11,
+  .full__container .row .col-sm-11 {
+    width: 91.66667%;
+  }
+  .container .row .col-sm-12,
+  .full__container .row .col-sm-12 {
+    width: 100%;
+  }
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .container .row .col-xs-1,
+  .full__container .row .col-xs-1 {
+    width: 8.33333%;
+  }
+  .container .row .col-xs-2,
+  .full__container .row .col-xs-2 {
+    width: 16.66667%;
+  }
+  .container .row .col-xs-3,
+  .full__container .row .col-xs-3 {
+    width: 25%;
+  }
+  .container .row .col-xs-4,
+  .full__container .row .col-xs-4 {
+    width: 33.33333%;
+  }
+  .container .row .col-xs-5,
+  .full__container .row .col-xs-5 {
+    width: 41.66667%;
+  }
+  .container .row .col-xs-6,
+  .full__container .row .col-xs-6 {
+    width: 50%;
+  }
+  .container .row .col-xs-7,
+  .full__container .row .col-xs-7 {
+    width: 58.33333%;
+  }
+  .container .row .col-xs-8,
+  .full__container .row .col-xs-8 {
+    width: 66.66667%;
+  }
+  .container .row .col-xs-9,
+  .full__container .row .col-xs-9 {
+    width: 75%;
+  }
+  .container .row .col-xs-10,
+  .full__container .row .col-xs-10 {
+    width: 83.33333%;
+  }
+  .container .row .col-xs-11,
+  .full__container .row .col-xs-11 {
+    width: 91.66667%;
+  }
+  .container .row .col-xs-12,
+  .full__container .row .col-xs-12 {
+    width: 100%;
+  }
+  .hidden-xs {
+    display: none;
+  }
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
