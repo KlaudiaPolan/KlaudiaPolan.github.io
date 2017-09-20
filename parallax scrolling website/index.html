@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Parallax</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" media="screen">
+		<link rel="stylesheet" href="animate.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="style.css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	</head>
+
+	<body>
+		<section class="module parallax parallax-1">
+		  <div class="container2">
+		    <h1 data-animate="bounceInUp">Food House</h1>
+		  </div>
+		</section>
+
+		<section class="module content" data-animate="fadeInLeft">
+		  <div class="container">
+		    <h2>Lorem Ipsum</h2>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis scelerisque ultricies. Phasellus imperdiet lorem eget sem egestas, non viverra metus posuere. Curabitur velit metus, fermentum sit amet aliquet ullamcorper, faucibus et diam. Aliquam et quam id massa imperdiet rutrum at et ante. Ut eleifend, lectus a placerat feugiat, lectus urna ultrices libero, a sollicitudin enim ipsum eu sapien. Curabitur ac tortor vel neque pellentesque egestas lacinia ac arcu. Nulla a egestas tortor. Fusce euismod ante nibh, non mattis urna semper non. Nunc molestie dignissim nunc, et condimentum ligula interdum nec. Nullam feugiat sed libero at tincidunt. Pellentesque quis felis eget dui semper posuere. Nulla finibus purus eu placerat finibus. Fusce nec velit at justo vestibulum varius. Donec vehicula malesuada tellus vitae viverra.</p>
+		  </div>
+		</section>
+
+		<section class="module parallax parallax-2">
+		  <div class="container2">
+		    <h1 data-animate="bounceInUp">Section 2</h1>
+		  </div>
+		</section>
+
+		<section class="module content" data-animate="fadeInRight">
+		  <div class="container">
+		    <h2>Lorem Ipsum</h2>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis scelerisque ultricies. Phasellus imperdiet lorem eget sem egestas, non viverra metus posuere. Curabitur velit metus, fermentum sit amet aliquet ullamcorper, faucibus et diam. Aliquam et quam id massa imperdiet rutrum at et ante. Ut eleifend, lectus a placerat feugiat, lectus urna ultrices libero, a sollicitudin enim ipsum eu sapien. Curabitur ac tortor vel neque pellentesque egestas lacinia ac arcu. Nulla a egestas tortor. Fusce euismod ante nibh, non mattis urna semper non. Nunc molestie dignissim nunc, et condimentum ligula interdum nec. Nullam feugiat sed libero at tincidunt. Pellentesque quis felis eget dui semper posuere. Nulla finibus purus eu placerat finibus. Fusce nec velit at justo vestibulum varius. Donec vehicula malesuada tellus vitae viverra.</p>
+
+		  </div>
+		</section>
+
+		<section class="module parallax parallax-3">
+		  <div class="container2">
+		    <h1 data-animate="bounceInUp">Section 3</h1>
+		  </div>
+		</section>
+
+		<section class="module content" data-animate="fadeIn">
+		  <div class="container">
+		    <h2>Lorem Ipsum</h2>
+		     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis scelerisque ultricies. Phasellus imperdiet lorem eget sem egestas, non viverra metus posuere. Curabitur velit metus, fermentum sit amet aliquet ullamcorper, faucibus et diam. Aliquam et quam id massa imperdiet rutrum at et ante. Ut eleifend, lectus a placerat feugiat, lectus urna ultrices libero, a sollicitudin enim ipsum eu sapien. Curabitur ac tortor vel neque pellentesque egestas lacinia ac arcu. Nulla a egestas tortor. Fusce euismod ante nibh, non mattis urna semper non. Nunc molestie dignissim nunc, et condimentum ligula interdum nec. Nullam feugiat sed libero at tincidunt. Pellentesque quis felis eget dui semper posuere. Nulla finibus purus eu placerat finibus. Fusce nec velit at justo vestibulum varius. Donec vehicula malesuada tellus vitae viverra.</p>
+
+		  </div>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="jquery.viewportchecker.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('*[data-animate]').addClass('hide').each(function(){
+		      $(this).viewportChecker({
+		        classToAdd: 'show animated ' + $(this).data('animate'),
+		        classToRemove: 'hide',
+		        offset: '30%'
+		      });
+		    });
+			});
+		</script>
+	</body>
+</html>

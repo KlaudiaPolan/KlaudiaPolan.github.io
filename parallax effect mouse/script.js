@@ -11,7 +11,7 @@ bg.addEventListener('mousemove', (e) => {
 
 const macbook = document.querySelector('.macbook');
 const windowWidth2 = window.innerWidth / 10;
-const windowHeight2 = window.innerHeight / 10 ;
+const windowHeight2 = window.innerHeight / 10;
 
 macbook.addEventListener('mousemove', (e) => {
   const mouseX = e.clientX / windowWidth2;
