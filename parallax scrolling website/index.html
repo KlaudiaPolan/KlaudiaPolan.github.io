@@ -52,10 +52,11 @@
 		  </div>
 		</section>
 
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="jquery.viewportchecker.min.js"></script>
+
 		<script>
-			$(document).ready(function(){
+			$(window).ready(function(){
 				$('*[data-animate]').addClass('hide').each(function(){
 		      $(this).viewportChecker({
 		        classToAdd: 'show animated ' + $(this).data('animate'),

@@ -5,6 +5,10 @@ body {
 a {
   font-size: 20px;
   color: #060;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
   text-decoration: none;
 }
 
@@ -26,29 +30,36 @@ section.module p {
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
-
 }
 section.module p:last-child {
   margin-bottom: 0;
 }
+
 section.module.content {
   padding: 60px 0;
   text-align: left;
 }
+
 section.module.parallax {
   height: 800px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 section.module.parallax h1 {
-
   font-size: 150px;
-  /*line-height: 800px;*/
   line-height: 800px;
   text-align: center;
   text-transform: uppercase;
+  -webkit-opacity: .8;
+  -moz-opacity: .8;
+  -ms-opacity: .8;
+  -o-opacity: .8;
   opacity: .8;
   background: -webkit-linear-gradient(right, #f0f2f0, #989898);
   -webkit-background-clip: text;
@@ -65,11 +76,19 @@ section.module.parallax-3 {
   background-image: url(water-japan-shrine-wallpaper.jpg);
 }
 
-.hide{
-  opacity:0
+.hide {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
 }
 
 .show {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
   opacity: 1;
 }
 @media (max-width: 1160px){
